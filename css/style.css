@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Chango&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Section */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 a {
+  text-transform: uppercase;
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #02568d;
+  font-family: "Cookie", cursive;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+header .navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin-right: 2rem;
+}
+
+header .navbar li {
+  padding: 0 1rem;
+}
+
+header .navbar ul li a {
+  padding-bottom: 0.1rem;
+}
+
+header .navbar a {
+  color: #ff5e6c;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.6rem;
+}
+
+header .navbar ul li a:hover {
+  border-bottom: 1.5px solid #ff5e6c;
+}
+
+/* Showcase Section */
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-left,
+.grid-right {
+  margin-top: 30vh;
+}
+
+.grid-left {
+  margin-right: 2rem;
+}
+
+.grid-left h1,
+.grid-right h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.grid-left p,
+.grid-right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1.1rem;
+  color: #000000;
+}
+
+.showcase-grid .grid-left,
+.showcase-grid .grid-left h1 {
+  color: #0f2862;
+}
+
+.showcase-grid .grid-right,
+.showcase-grid .grid-right h1 {
+  color: #ff5e6c;
+}
+
+.grid-left .btn-blue,
+.grid-right .btn-pink {
+  display: inline;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border: 0;
+  text-decoration: none;
+}
+
+.showcase-grid a {
+  margin-top: 2rem;
+}
+
+.grid-left .btn-blue {
+  background: #02568d;
+  color: #ffffff;
+}
+
+.grid-right .btn-pink {
+  background: #ff5e6c;
+  color: #ffffff;
+}
+
+.grid-left .btn-blue:hover,
+.grid-right .btn-pink:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 0.5;
+}
+
+/* Headphone Section */
+.headphones {
+  background: #f3e367;
+}
+.headphones h1 {
+  font-size: 4rem;
+  font-family: "Bungee Shade", cursive;
+  font-weight: 600;
+  line-height: 0.9;
+  width: 100%;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.headphones-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  margin: 3rem 5rem;
+}
+
+.headphones-grid > div {
+  margin: 2rem auto 3rem auto;
+}
+
+.headphones img {
+  box-shadow: 0 0 15px #000000;
+}
+
+.headphones-grid .grid-headphone-text {
+  margin: 5rem 5rem;
+}
+
+.headphones-grid .grid-headphone-text h6 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.headphones-grid .grid-headphone-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  font-family: "Chango", cursive;
+  color: #ffffff;
+  background: #000;
+  margin-bottom: 1rem;
+}
+
+.headphones-grid .grid-headphone-text ul {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.headphones-grid .grid-headphone-text .fa-headphones {
+  color: #0f2862;
+}
+
+.headphones-grid .grid-headphone-text p {
+  margin-bottom: 2rem;
+}
+
+.headphones-grid .grid-headphone-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headphones-grid .grid-headphone-photo img {
+  width: 80%;
+  height: 90vh;
+}
+
+.grid-headphone-text a.btn-dark {
+  display: inline;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border: 0;
+  text-decoration: none;
+  background: #0f2862;
+  color: #f3e367;
+  border-radius: 2rem;
+}
+
+.grid-headphone-text a.btn-light:hover,
+.grid-headphone-text a.btn-dark:hover {
+  background: #000;
+}
+
+/* Section Popular Products */
+.popular-products {
+  width: 100%;
+  height: 95vh;
+}
+
+.popular-products h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7;
+  font-family: "Bowlby One SC", cursive;
+  margin-bottom: 1rem;
+  margin: 0;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-cards img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-cards div {
+  height: 50vh;
+}
+
+.home-cards .cards ul {
+  list-style-type: none;
+  margin-top: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-cards .cards ul li {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.home-cards .cards .small-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  text-align: center;
+}
+
+.home-cards .cards h4 {
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+.cards .buy-now {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.cards .buy-now li p {
+  font-size: 2.5rem;
+  margin-right: 4rem;
+  font-family: monospace;
+}
+
+.cards .buy-now li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: #0f2862;
+  color: #ffffff;
+  padding: 0.3rem 2rem;
+  border-radius: 1.5rem;
+}
+
+.cards .buy-now li a:hover {
+  opacity: 0.9;
+}
+
+/* Section Fixed */
+.fixed-img {
+  background: url(../img/fixed.jpg);
+  position: relative;
+  height: 60vh;
+  opacity: 0.75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+
+/* Section Earphones */
+.earphones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 6rem;
+}
+
+.earphones-grid img {
+  width: 200px;
+  height: 200px;
+}
+
+.earphones-grid .earphone {
+  margin-bottom: 4rem;
+}
+
+.earphones .earphone-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 900;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 2rem;
+}
+
+.earphone h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0;
+  padding: 1rem;
+  line-height: 1.1;
+}
+
+button {
+  background: #02568d;
+  color: #ffffff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+}
+
+button .price {
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+button .basket {
+  display: none;
+}
+button:hover .price {
+  display: none;
+}
+button:hover .basket {
+  display: inline;
+  font-family: monospace;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Footer Section */
+.section-footer {
+  background: #051622;
+  color: #ffffff;
+  padding: 1rem 9rem;
+}
+
+.section-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-footer h2 {
+  font-family: "Roboto";
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.section-footer h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.8rem;
+}
+
+.section-footer a {
+  line-height: 1.8;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.section-footer ul li {
+  list-style-type: none;
+}
+
+.section-footer a > i {
+  color: #ffffff;
+  margin-right: 0.5rem;
+}
+
+/* Email Form */
+.email-form {
+  width: 100%;
+  display: inline-block;
+  background-color: #555;
+  position: relative;
+  border-radius: 20px;
+  line-height: 0;
+  margin-top: 1rem;
+}
+
+.email-form .form-control {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: #ddd;
+  background-color: transparent;
+  font-family: inherit;
+  margin: 0;
+  padding: 0 3rem 0 1.5rem;
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+}
+
+.email-form .submit {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #eee;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Navbar */
+  header .navbar a {
+    display: none;
+  }
+
+  /* Showcase */
+  .grid-left h1,
+  .grid-right h1 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+  }
+
+  .grid-left p,
+  .grid-right p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Section Headphones */
+  .headphones h1 {
+    font-size: 2rem;
+    line-height: 1;
+    padding-top: 1rem;
+  }
+
+  .headphones-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 3rem;
+  }
+
+  .headphones-grid .grid-headphone-text {
+    margin: 2rem 2rem;
+  }
+
+  .headphones-grid .grid-headphone-text h6 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .headphones-grid .grid-headphone-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  .headphones-grid .grid-headphone-text ul {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .headphones-grid .grid-headphone-text p {
+    margin-bottom: 1rem;
+  }
+
+  .headphones-grid .grid-headphone-photo img {
+    width: 80%;
+    height: 70vh;
+  }
+
+  .grid-headphone-text a.btn-dark {
+    font-size: 1rem;
+  }
+
+  /* Gaming Headphones */
+  .popular-products {
+    width: 100%;
+    height: 60vh;
+  }
+  .popular-products h3 {
+    font-size: 1rem;
+  }
+
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-cards .display {
+    display: none;
+  }
+
+  .home-cards img {
+    width: 70%;
+    height: 70%;
+    margin: 0 1rem;
+  }
+
+  .home-cards .cards ul li {
+    font-size: 0.7rem;
+  }
+
+  .cards .buy-now {
+    display: none;
+  }
+
+  /* Section Fixed */
+  .fixed {
+    display: none;
+  }
+
+  /* Earphones */
+  .earphones-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 2rem;
+  }
+
+  .earphones-grid img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .earphones-grid .earphone {
+    margin-bottom: 2rem;
+  }
+
+  .earphones .earphone-header {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  .earphone h4 {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+  }
+
+  button {
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  button .price {
+    font-size: 1rem;
+  }
+
+  button .basket {
+    display: none;
+  }
+
+  button:hover .price {
+    display: none;
+  }
+
+  button:hover .basket {
+    display: inline;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .section-footer {
+    padding: 2rem 2rem;
+  }
+
+  .section-footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .section-footer div:nth-child(2),
+  .section-footer div:nth-child(3) {
+    display: none;
+  }
+}
